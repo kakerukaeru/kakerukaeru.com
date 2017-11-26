@@ -1,8 +1,10 @@
 var CACHE_NAME = "v1";
 var urlsToCache = [
   "/",
+  "/index-amp.html",
   "/styles/main.css",
   "/scripts/main.js",
+  "/images/favicon.ico",
   "/images/niconico.png",
   "/images/twitter-circle.svg",
   "/images/github-circle.svg",
