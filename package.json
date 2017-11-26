@@ -1,5 +1,8 @@
 {
   "scripts" : {
-    "test" : "echo 1"
+    "test" : "amphtml-validator public/index-amp.html"
+  },
+  "devDependencies": {
+    "amphtml-validator": "^1.0.21"
   }
 }
