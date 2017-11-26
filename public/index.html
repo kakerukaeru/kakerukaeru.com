@@ -44,6 +44,24 @@
                   .then(function() { console.log('Service Worker Registered'); });
           }
       </script>
+      <script>
+          function logConnectionType() {
+              var connectionType = 'not supported';
+              var downlinkMax = 'not supported';
+
+              if ('connection' in navigator) {
+                  connectionType = navigator.connection.type;
+
+
+              }
+
+              console.log('Current connection type: ' + connectionType +
+                  ' (downlink max: ' + downlinkMax + ')');
+          }
+
+          logConnectionType();
+          navigator.connection.addEventListener('change', logConnectionType);
+      </script>
     </div>
   </body>
 </html>
