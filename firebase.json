@@ -4,16 +4,7 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
       {
-        "source": "**/*.@(svg|ico|png)",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(svg|ico|png)",
+        "source": "images/**",
         "headers": [
           {
             "key": "Cache-Control",
@@ -25,4 +16,3 @@
     "cleanUrls": true
   }
 }
-s
